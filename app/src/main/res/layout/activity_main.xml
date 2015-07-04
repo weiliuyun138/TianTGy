@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/home_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical"
+        android:layout_above="@+id/home_fragment_rg">
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/home_fragment_rg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/home_fragment_rb_homepage"
+            style="@style/home_rg_rb"
+            android:text="首页"
+            android:checked="true"
+            android:drawableTop="@drawable/home_fragment_rb_homepage_selector" />
+
+        <RadioButton
+            android:id="@+id/home_fragment_rb_category"
+            style="@style/home_rg_rb"
+            android:text="品类"
+            android:drawableTop="@drawable/home_fragment_rb_category_selector" />
+
+        <RadioButton
+            android:id="@+id/home_fragment_rb_myfruit"
+            style="@style/home_rg_rb"
+            android:text="我的果园"
+            android:drawableTop="@drawable/home_fragment_rb_myfruit_selector" />
+
+        <RadioButton
+            android:id="@+id/home_fragment_rb_buycar"
+            style="@style/home_rg_rb"
+            android:text="购物车"
+            android:drawableTop="@drawable/home_fragment_rb_buycar_selector" />
+
+        <RadioButton
+            android:id="@+id/home_fragment_rb_fruitfood"
+            style="@style/home_rg_rb"
+            android:text="果实"
+            android:drawableTop="@drawable/home_fragment_rb_fruitfood_selector" />
+    </RadioGroup>
+</LinearLayout>

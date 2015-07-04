@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/limegreen"
+    >
+
+    <Button
+        android:id="@+id/homepage_actionbar_location"
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:drawableLeft="@drawable/no_location"
+        android:layout_height="match_parent"
+        android:textColor="@color/white"
+        android:text="北京"
+        android:background="#0000"
+        android:textSize="20sp"
+        />
+
+
+    <EditText
+        android:id="@+id/homepage_actionbar_search"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:hint="搜索水果"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/abs__ic_search"
+        android:singleLine="true"
+        />
+    <Spinner
+        android:id="@+id/homepage_actionbar_menu"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/abs__ic_menu_moreoverflow_normal_holo_dark"
+        />
+
+</LinearLayout>

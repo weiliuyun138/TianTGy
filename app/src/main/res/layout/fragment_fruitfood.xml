@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.tiantgy.fragment.FruitfoodFragment">
+
+    <!--标题栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/limegreen">
+
+        <ImageView
+            android:id="@+id/fruitfood_login"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/bar_myguoshi" />
+
+        <RadioGroup
+            android:id="@+id/fruitfood_rg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal"
+            android:padding="1dp"
+            android:background="@drawable/fruitfood_rg_shape"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp">
+
+            <RadioButton
+                android:id="@+id/fruitfood_rb_encyclopedia"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:button="@null"
+                android:checked="true"
+                android:text="百科"
+                android:textColor="@color/fruitfood_rg_textcolor_selector"
+                android:background="@drawable/fruitfood_rg_backcolor_selector" />
+
+            <RadioButton
+                android:id="@+id/fruitfood_rb_fruitfriend"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="果友圈"
+                android:background="@drawable/fruitfood_rg_backcolor_selector"
+                android:textColor="@color/fruitfood_rg_textcolor_selector" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/fruitfood_loginchat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:src="@drawable/fruitfood_guoshinotif_selector" />
+    </LinearLayout>
+
+    <!--内容viewpager-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fruitfood_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9" />
+
+</LinearLayout>

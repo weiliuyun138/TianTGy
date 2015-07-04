@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="50dp"
+    android:orientation="vertical"
+    android:background="#0000"
+    tools:context="com.example.administrator.tiantgy.activity.CategoryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@color/limegreen">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="9"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:src="@drawable/abs__ic_ab_back_holo_dark" />
+
+                <TextView
+                    android:id="@+id/category_tv_back"
+                    android:layout_width="0dp"
+                    android:layout_weight="8"
+                    android:layout_height="match_parent"
+                    android:text="全部鲜果"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/categorydetail_button_search"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:button="@null"
+                android:background="@drawable/abs__ic_search" />
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/category_rg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@color/limegreen">
+
+            <RadioButton
+                android:id="@+id/category_rb_newcate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="新品"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/category_rb_selector"
+                android:checked="true"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/category_rb_hot"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="热卖"
+                android:background="@drawable/category_rb_selector"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/category_rb_price"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/category_rb_selector"
+                android:text="价格"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:button="@null" />
+
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/categoryd_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8" />
+
+</LinearLayout>

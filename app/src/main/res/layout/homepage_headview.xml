@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+
+        <com.example.administrator.tiantgy.widget.AutoScrollViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/homepage_head_viewpager" />
+
+        <LinearLayout
+            android:id="@+id/homepage_head_dotll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:padding="5dp"></LinearLayout>
+    </RelativeLayout>
+
+
+    <GridView
+        android:id="@+id/homepage_head_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="5dp"
+        android:numColumns="4"
+        android:horizontalSpacing="20dp"
+        android:background="@color/darkseagreen"></GridView>
+
+    <!--top-->
+    <ListView
+        android:id="@+id/homepage_head_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:src="@color/darkseagreen" />
+    <!--mix-->
+    <com.felipecsl.asymmetricgridview.library.widget.AsymmetricGridView
+        android:id="@+id/homepage_head_asygridview"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"></com.felipecsl.asymmetricgridview.library.widget.AsymmetricGridView>
+
+    <com.felipecsl.asymmetricgridview.library.widget.AsymmetricGridView
+        android:id="@+id/homepage_head_asygridview2"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"></com.felipecsl.asymmetricgridview.library.widget.AsymmetricGridView>
+</LinearLayout>
